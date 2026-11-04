@@ -1,0 +1,7 @@
+CareSense/
+Plan/
+scripts/
+tests/
+.claude/
+*.md
+!README.md

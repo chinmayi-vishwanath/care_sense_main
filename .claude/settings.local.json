@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone git@github.com:nareshrajaparimala/CareSense.git . 2>&1 || git clone git@github.com:nareshrajaparimala/CareSense.git CareSense 2>&1)",
+      "Bash(find /Users/nareshraja/Temp/caresence/CareSense -type f \\\\\\( -name \"package.json\" -o -name \"next.config.*\" -o -name \"tsconfig.json\" -o -name \".env*\" \\\\\\) 2>/dev/null | head -20)",
+      "Bash(npm install bcryptjs jose && npm install -D @types/bcryptjs 2>&1 | tail -5)",
+      "Bash(ls -la /Users/nareshraja/Temp/caresence/.env* 2>/dev/null)",
+      "Bash(node_modules/.bin/tsc --noEmit 2>&1 | grep -v \"^CareSense/\" | head -30)",
+      "Bash(node_modules/.bin/next dev --port 3000 2>&1 | head -20)",
+      "Bash(node_modules/.bin/next build 2>&1 | tail -60)"
+    ]
+  }
+}
